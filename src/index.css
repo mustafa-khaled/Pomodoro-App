@@ -12,7 +12,10 @@
   --light-blue: #1e213f;
   --dark-blue: #161932;
   --color-light-grey: #eff1fa;
+  --color-light-blue: #d7e0ff;
   --secondary: #f87070;
+  --secondary2: #70f3f8;
+  --secondary3: #d881f8;
 }
 
 body {

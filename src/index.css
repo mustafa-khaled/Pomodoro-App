@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-blue: #1e213f;
+  --dark-blue: #161932;
+  --color-light-grey: #eff1fa;
+  --secondary: #f87070;
+}
+
+body {
+  background-color: var(--light-blue);
+  color: var(--color-light-grey);
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+}

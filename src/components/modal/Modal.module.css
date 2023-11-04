@@ -41,7 +41,7 @@
 }
 
 form {
-  margin: 20px 0 40px;
+  margin: 20px 0;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -68,7 +68,6 @@ form input {
 
 .submit-btn {
   position: absolute;
-  background-color: var(--secondary);
   color: var(--color-light-grey);
   padding: 10px 30px;
   border-radius: 10px;
@@ -85,4 +84,28 @@ form input {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   cursor: pointer;
+}
+
+.modal-colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 40px;
+}
+
+.modal-colors > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-colors > div div {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }

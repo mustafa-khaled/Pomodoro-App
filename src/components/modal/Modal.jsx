@@ -1,4 +1,5 @@
 import { useAppState } from "../context/StateContext";
+import { colors } from "../data/data";
 import styles from "./Modal.module.css";
 import closePhoto from "/public/close-x-svgrepo-com.svg";
 
@@ -10,6 +11,8 @@ function Modal({ onCloseModal }) {
     setShortBreakTime,
     longBreakTime,
     setLongBreakTime,
+    activeColor,
+    setActiveColor,
   } = useAppState();
 
   const handleFormSubmit = (e) => {
@@ -26,6 +29,11 @@ function Modal({ onCloseModal }) {
     setLongBreakTime(newLongBreakTime);
 
     onCloseModal();
+  };
+
+  const handleColorChange = (color) => {
+    localStorage.setItem("color", color);
+    setActiveColor(color);
   };
 
   return (
@@ -53,10 +61,27 @@ function Modal({ onCloseModal }) {
             <label htmlFor="long">Long Break:</label>
             <input type="number" id="long" defaultValue={longBreakTime / 60} />
           </div>
-          <button className={styles["submit-btn"]} type="submit">
+          <button
+            className={styles["submit-btn"]}
+            type="submit"
+            style={{ backgroundColor: activeColor }}>
             Apply
           </button>
         </form>
+
+        <div className={styles["modal-colors"]}>
+          <h3>Colors</h3>
+          <div>
+            {colors.map((c) => {
+              return (
+                <div
+                  key={c.color}
+                  style={{ backgroundColor: `${c.color}` }}
+                  onClick={() => handleColorChange(c.color)}></div>
+              );
+            })}
+          </div>
+        </div>
       </div>
       <div className={styles["over-lay"]} onClick={onCloseModal}></div>
     </>

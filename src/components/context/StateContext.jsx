@@ -13,6 +13,9 @@ function StateProvider({ children }) {
   const [progress, setProgress] = useState(50);
   const [time, setTime] = useState(10);
   const [isTimeActive, setIsTimeActive] = useState(false);
+  const [activeColor, setActiveColor] = useState(
+    window.localStorage.getItem("color") || "#f87070"
+  );
 
   useEffect(() => {
     switch (activeTag) {
@@ -60,6 +63,8 @@ function StateProvider({ children }) {
         setShortBreakTime,
         longBreakTime,
         setLongBreakTime,
+        activeColor,
+        setActiveColor,
       }}>
       {children}
     </StateContext.Provider>

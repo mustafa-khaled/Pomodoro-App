@@ -2,13 +2,16 @@ import { useAppState } from "../context/StateContext";
 import styles from "./Tags.module.css";
 
 function Tag({ tag }) {
-  const { activeTag, setActiveTag, setIsTimeActive } = useAppState();
+  const { activeTag, setActiveTag, setIsTimeActive, activeColor } =
+    useAppState();
 
   return (
     <div
-      className={` ${activeTag === tag.title ? styles.active : ""} ${
-        styles.tag
-      }`}
+      style={{
+        backgroundColor: tag.title === activeTag ? activeColor : "",
+        color: tag.title === activeTag ? "#161932" : "#d7e0ff",
+      }}
+      className={`${styles.tag}`}
       onClick={() => {
         setActiveTag(tag.title);
         setIsTimeActive(false);

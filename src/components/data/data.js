@@ -12,3 +12,9 @@ export const tagsData = [
     title: "Long Break",
   },
 ];
+
+export const colors = [
+  { color: "#f87070" },
+  { color: "#70f3f8" },
+  { color: "#d881f8" },
+];

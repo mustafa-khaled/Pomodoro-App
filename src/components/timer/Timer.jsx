@@ -14,6 +14,7 @@ function Timer() {
     resetTime,
     setProgress,
     initTime,
+    activeColor,
   } = useAppState();
 
   useEffect(() => {
@@ -34,7 +35,7 @@ function Timer() {
       <div
         className={styles["circle-progress"]}
         style={{
-          background: `conic-gradient(var(--secondary) ${progress}%, transparent ${progress}%)`,
+          background: `conic-gradient(${activeColor} ${progress}%, transparent ${progress}%)`,
         }}>
         <div>
           <h3>{getTime(time)}</h3>

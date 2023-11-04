@@ -53,6 +53,7 @@ function StateProvider({ children }) {
         isTimeActive,
         setIsTimeActive,
         resetTime,
+        initTime,
       }}>
       {children}
     </StateContext.Provider>

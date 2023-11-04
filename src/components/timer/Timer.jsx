@@ -1,11 +1,20 @@
 import { useEffect } from "react";
 import { useAppState } from "../context/StateContext";
+import { getTime } from "../utils/helpers";
 
 import styles from "./Timer.module.css";
 
 function Timer() {
-  const { progress, time, setTime, isTimeActive, setIsTimeActive, resetTime } =
-    useAppState();
+  const {
+    progress,
+    time,
+    setTime,
+    isTimeActive,
+    setIsTimeActive,
+    resetTime,
+    setProgress,
+    initTime,
+  } = useAppState();
 
   useEffect(() => {
     if (isTimeActive && time > 0) {
@@ -14,14 +23,11 @@ function Timer() {
       }, 1000);
       return () => clearInterval(interval);
     }
-  }, [time, isTimeActive]);
+  }, [time, isTimeActive, setTime]);
 
-  const getTime = (time) => {
-    const min = Math.floor(time / 60);
-    const sec = time % 60;
-
-    return `${min < 10 ? "0" + min : min}:${sec < 10 ? "0" + sec : sec}`;
-  };
+  useEffect(() => {
+    setProgress(time / (initTime / 100));
+  }, [time, initTime, setProgress]);
 
   return (
     <div className={styles.timer}>

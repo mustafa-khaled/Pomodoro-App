@@ -69,3 +69,10 @@
 .circle-progress > div button:hover {
   opacity: 0.7;
 }
+
+@media (max-width: 450px) {
+  .timer {
+    width: 300px;
+    height: 300px;
+  }
+}

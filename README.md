@@ -1,27 +1,35 @@
-[Live site URL](https://pomodooroo.netlify.app/)
+[Live site URL](https://newcapitalwebsite.netlify.app/)
 
-# Pomodoro Timer App
+# Real Estate Website
 
-Welcome to the Pomodoro Timer App, your ultimate productivity companion for managing tasks and boosting your efficiency. This application is meticulously crafted using React.js and styled with CSS, offering a sleek and user-friendly interface. With the power of the Context API, you can effortlessly track your work sessions, short breaks, and long breaks, all while customizing your time intervals and visual preferences.
+Welcome to our Real Estate Website! This platform is designed to provide users with a seamless experience in exploring properties and real estate services. Developed using React.js and styled using Tailwind CSS, our website boasts a modern interface that offers intuitive navigation and engaging visuals.
+
+## Pages
+
+- **Home**: The Home page serves as the gateway to our platform, offering an overview of featured properties, latest listings, and personalized recommendations.
+  
+- **About**: Discover the story behind our real estate agency, our mission, values, and the team dedicated to serving our clients.
+  
+- **Contact**: Connect with us effortlessly through our Contact page. Find our contact details, including email, phone numbers, and a contact form for inquiries or appointments.
+  
+- **Projects**: Explore our diverse range of real estate projects showcased in a visually appealing manner. From residential to commercial properties, each project page provides comprehensive details and images.
+  
+- **Project Details (Single Page)**: Dive deeper into individual projects with dedicated pages that furnish in-depth information, including property specifications, location details, pricing, and contact information for inquiries.
 
 ## Key Features
 
-### Time Management
-- Take control of your work sessions with the ability to set custom work times, short breaks, and long breaks. Tailor your productivity intervals to suit your preferences and work habits.
+- **Seamless Scrolling and Animation**: Enjoy a smooth and engaging browsing experience across all pages with seamless scrolling and subtle animations, enhancing user interaction and navigation.
 
-### Customizable Timer
-- Adjust your timer duration on the fly. Whether you need a shorter burst of focus or a longer work period, our app allows you to modify your timer settings at any time.
+- **Property Showcase**: Our website presents properties elegantly, with attention to detail, utilizing high-quality images and engaging descriptions to showcase each property's unique features.
 
-### Visual Themes
-- Choose from a variety of visual themes to personalize your Pomodoro experience. Select from three unique color schemes to create a workspace that resonates with your style and mood.
+- **Interactive UI**: The user interface is designed to be intuitive and user-friendly, ensuring easy navigation and a pleasant browsing experience for visitors.
 
-### User-Friendly Interface
-- Our app's intuitive design ensures a seamless and distraction-free experience. Easily start, pause, and reset your timers with just a few clicks, making it the ideal tool for enhancing your time management skills.
+- **Tailwind CSS Styling**: Leveraging Tailwind CSS, our website's design emphasizes responsiveness and aesthetic appeal, providing a visually appealing and cohesive look across all pages.
 
 ## Technologies Used
 
-- **React.js**: We've harnessed the power of React.js to create a responsive and dynamic user interface. Its component-based architecture ensures a smooth and interactive user experience.
+- **React.js**: Employed for building a dynamic, responsive, and interactive user interface, enabling smooth transitions between different pages and components.
 
-- **Context API**: Our app leverages the Context API for state management, making it easy to share and manage timer settings across different components while providing a seamless user experience.
+- **Tailwind CSS**: Tailwind CSS is utilized extensively for styling, offering a streamlined and visually pleasing design while maintaining flexibility and responsiveness.
 
-- **Custom CSS Styling**: The app's visual appeal is achieved through customized CSS styling. We've paid attention to the details to ensure a visually pleasing and ergonomic interface.
+- **Seamless Scrolling and Animations**: Achieved through React libraries and custom CSS to provide an immersive and visually stimulating experience while browsing the website.
